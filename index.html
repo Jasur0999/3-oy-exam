@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body class="home-page">
+    <header>
+      <div class="container">
+        <nav class="nav">
+            <a href="./index.html" class="logo">
+              <img src="./images/logo.svg" alt="Logo" />
+            </a>
+          
+            <label>
+              <input type="text" placeholder="Search bar" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.707 20.293L18.025 16.611C19.258 15.071 20 13.122 20 11C20 6.038 15.962 2 11 2C6.038 2 2 6.038 2 11C2 15.962 6.038 20 11 20C13.122 20 15.071 19.258 16.611 18.025L20.293 21.707L21.707 20.293ZM4 11C4 7.14 7.14 4 11 4C14.86 4 18 7.14 18 11C18 14.86 14.86 18 11 18C7.14 18 4 14.86 4 11Z" fill="#CCCCCC"/>
+              </svg>
+            </label>
+            
+            <div class="head-link">
+              <a href="./pages/details.html">Details</a>
+              <a href="./pages/courses.html">Courses</a>
+              <a href="./pages/blog.html">Blog</a>
+              <a href="./pages/account.html">Account</a>
+              <button class="btn-1">Login</button>
+
+              <!-- dark//////////////////////// -->
+
+              <button id="light-dark" class="btn-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                   viewBox="0 0 24 24">
+                   <path d="M12 11.807A9.002 9.002 0 0 1 
+                       10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 
+                       10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 
+                       9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z">
+                   </path>
+                 </svg>
+             </button>
+
+             <!-- HAMBURGER -->
+              <div class="nav-items" id="navbar-responsive">
+
+                <a href="./pages/details.html">Details</a>
+                <a href="./pages/blog.html">Blog</a>
+                <a href="./pages/account.html">Account</a>
+                <a href="./pages/courses.html">Courses</a>
+              </div>
+                  <button class="menu-btn" id="menu-btn">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                   </button>
+              <!-- <nav>
+                <div class="nav-items" id="navbar-responsive">
+                </div>
+                    <button class="menu-btn" id="menu-btn">
+                          <span class="line"></span>
+                          <span class="line"></span>
+                          <span class="line"></span>
+                     </button>
+                </nav> -->
+            </div>
+          
+
+          
+        </nav>
+      </div>
+    </header>
+    
+    <main> 
+      <section class="logo">
+        <div class="container">
+            <div class="logo_box">
+              <div class="logo_box-1">
+                <h1>Find the Best Courses and Amazing Mentor</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus </p>
+
+                <div class="logo-input">
+                  <img src="./images/search.svg" alt="">
+                  <input type="text" placeholder="Type in the course you want to learn">
+                 
+                  <button>Search</button>
+                </div>
+
+                <div class="logo_box-1-hour">
+                      <div class="logo_box-1-hour-1">
+                        <img src="./images/logo-1-1111/access_alarm.svg" alt="">
+                        <p>Life Time Acces</p>
+                      </div>
+
+                      <div class="logo_box-1-hour-1">
+                        <img src="./images/24/basic/user.svg" alt="">
+                        <p>Expert Mentor</p>
+                      </div>
+
+                      <div class="logo_box-1-hour-1">
+                        <!-- <img src="./images/AV/Outlined/AV/video_library.svg" alt=""> -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.66463 6.99992H2.3313V23.3333C2.3313 24.6166 3.3813 25.6666 4.66463 25.6666H20.998V23.3333H4.66463V6.99992ZM23.3313 2.33325H9.3313C8.04797 2.33325 6.99797 3.38325 6.99797 4.66659V18.6666C6.99797 19.9499 8.04797 20.9999 9.3313 20.9999H23.3313C24.6146 20.9999 25.6646 19.9499 25.6646 18.6666V4.66659C25.6646 3.38325 24.6146 2.33325 23.3313 2.33325ZM23.3313 18.6666H9.3313V4.66659H23.3313V18.6666ZM13.998 6.41659V16.9166L20.998 11.6666L13.998 6.41659Z" fill="white"/>
+                          </svg>
+
+                        <p>100K+ Courses</p>
+                      </div>
+                </div>
+
+              </div>
+
+              <div class="logo_box-2">
+
+                <img src="./images/logo-5.svg" alt="">
+                <!-- <img src="./images/logo-2-1.svg" alt="">
+
+                <svg class="logo-svg-1" xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+                  <path clip-rule="evenodd" d="M34.843 18.4947C32.41 12.4729 27.4008 9.63504 22.5973 10.1162C22.2791 9.77654 21.882 9.50166 21.4209 9.32268C19.8455 8.71112 18.0661 9.43004 17.3577 10.9643C17.1508 11.4124 17.0561 11.8849 17.0627 12.3493C13.2653 15.3367 11.6341 20.8468 14.0741 26.8859C15.6527 30.7932 15.7496 33.301 14.9323 35.4768C14.7957 35.8406 14.3806 36.7152 14.0995 37.3077L14.0994 37.3077C13.9664 37.588 13.8634 37.8051 13.834 37.8751L13.5818 38.4809L15.6257 43.5398L24.6572 39.8909C25.5992 41.343 26.8799 42.0517 28.807 42.3705C31.1777 42.7627 33.5686 41.7966 35.0015 39.8678C36.0295 38.484 36.4273 36.8348 36.2082 35.2239L45.2956 31.5524L43.2517 26.4935L42.6495 26.2329C42.5861 26.2055 42.3706 26.1241 42.0888 26.0176L42.0884 26.0175L42.0878 26.0173L42.0877 26.0172C41.4753 25.7859 40.5507 25.4367 40.1939 25.2664C38.0906 24.2619 36.4161 22.3883 34.843 18.4947ZM33.0371 36.5052L27.7587 38.6378C28.1258 38.943 28.602 39.0931 29.3293 39.2134C30.517 39.4099 31.7149 38.9259 32.4327 37.9595C32.7651 37.512 32.966 37.0165 33.0371 36.5052ZM38.8149 28.154C39.2649 28.3688 40.1858 28.7218 40.7929 28.9502L41.1299 29.7842L17.394 39.3741L17.0573 38.5408C17.3339 37.9609 17.7534 37.0669 17.928 36.602C19.0385 33.6454 18.9098 30.3124 17.0411 25.6871C14.7754 20.0794 16.9129 15.4063 20.8697 13.8077C24.8154 12.2135 29.6171 14.1025 31.876 19.6934C33.7387 24.3038 35.9622 26.7916 38.8149 28.154Z"/>
+                </svg>
+
+                <svg class="logo-svg-2" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" >
+                  <path clip-rule="evenodd" d="M9.58308 31.3529C9.00665 29.3426 9.72916 27.1641 11.5696 24.8004C10.3081 22.0832 10.0941 19.798 11.108 17.969C12.1218 16.1399 14.1732 15.1104 17.146 14.7404C18.1752 11.927 19.6398 10.1599 21.6501 9.58343C23.6603 9.00701 25.8388 9.72952 28.2025 11.57C30.9197 10.3084 33.2049 10.0945 35.0339 11.1083C36.863 12.1222 37.8925 14.1735 38.2625 17.1463C41.0759 18.1756 42.8431 19.6402 43.4195 21.6504C43.9959 23.6607 43.2734 25.8392 41.4329 28.2029C42.6945 30.92 42.9085 33.2052 41.8946 35.0343C40.8807 36.8633 38.8294 37.8929 35.8566 38.2629C34.8273 41.0763 33.3627 42.8434 31.3525 43.4199C29.3423 43.9963 27.1638 43.2738 24.8 41.4333C22.0829 42.6949 19.7977 42.9088 17.9686 41.895C16.1396 40.8811 15.11 38.8298 14.74 35.857C11.9267 34.8277 10.1595 33.3631 9.58308 31.3529ZM16.6989 33.1382C17.3344 33.3315 17.7844 33.8972 17.8297 34.5599C18.0067 37.1474 18.6351 38.6056 19.52 39.0962C20.405 39.5867 21.9746 39.3469 24.2627 38.1257C24.8487 37.813 25.567 37.8949 26.0676 38.3314C28.0224 40.0359 29.4979 40.6227 30.4705 40.3438C31.4431 40.0649 32.3834 38.7854 33.1379 36.304C33.3311 35.6685 33.8969 35.2185 34.5595 35.1732C37.147 34.9962 38.6053 34.3678 39.0958 33.4829C39.5863 32.598 39.3465 31.0283 38.1254 28.7402C37.8127 28.1542 37.8945 27.4359 38.331 26.9353C40.0356 24.9805 40.6223 23.5051 40.3435 22.5325C40.0646 21.5599 38.7851 20.6195 36.3037 19.8651C35.6682 19.6718 35.2181 19.1061 35.1728 18.4434C34.9959 15.8559 34.3675 14.3976 33.4825 13.9071C32.5976 13.4166 31.0279 13.6564 28.7398 14.8775C28.1538 15.1903 27.4356 15.1084 26.935 14.6719C24.9802 12.9674 23.5047 12.3806 22.5321 12.6595C21.5595 12.9384 20.6192 14.2179 19.8647 16.6993C19.6715 17.3348 19.1057 17.7848 18.4431 17.8301C15.8555 18.007 14.3973 18.6355 13.9068 19.5204C13.4162 20.4053 13.6561 21.975 14.8772 24.2631C15.1899 24.8491 15.1081 25.5673 14.6715 26.068C12.967 28.0227 12.3802 29.4982 12.6591 30.4708C12.938 31.4434 14.2175 32.3838 16.6989 33.1382ZM33.9849 23.8682L24.6475 26.5457L23.2174 21.5584L20.1414 22.4405L22.4535 30.5038L34.867 26.9443L33.9849 23.8682Z"/>
+                </svg>
+
+                <svg class="logo-svg-3" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" >
+                  <path clip-rule="evenodd" d="M26.3728 7.3321C24.1894 8.10526 22.8741 8.86377 21.5404 10.2248C21.0466 10.7287 20.6108 11.2793 20.2359 11.8744C19.5982 11.6638 18.9412 11.5184 18.2683 11.438C16.3355 11.2069 14.755 11.4462 12.65 12.1916C7.01204 14.1881 4.56926 20.3103 6.7177 26.3773C8.3402 30.9591 12.4622 34.4804 18.7362 37.0751C22.0294 38.437 26.0057 39.5308 28.7084 39.9047L30.2547 40.1187L31.3218 38.9793C33.1869 36.9878 35.5887 33.6354 37.2909 30.5045C40.5338 24.5397 41.5212 19.2091 39.8987 14.6273C37.773 8.62451 31.9686 5.37658 26.3728 7.3321ZM36.8822 15.6955C38.1534 19.2851 37.3292 23.7345 34.4795 28.976C32.9259 31.8338 30.7207 34.9207 29.0517 36.7215C26.6214 36.3723 22.965 35.3611 19.9591 34.118C14.4459 31.8379 11.0053 28.8987 9.73415 25.3091C8.14675 20.8264 9.84063 16.5812 13.7181 15.2081C15.3919 14.6154 16.4935 14.4486 17.8884 14.6153C18.7124 14.7138 19.4942 14.9523 20.2332 15.3346L21.7622 16.1254L22.4393 14.5428C22.7771 13.7534 23.24 13.0624 23.8259 12.4645C24.7784 11.4925 25.6821 10.9714 27.4348 10.3508C31.27 9.0105 35.3169 11.275 36.8822 15.6955Z"/>
+                </svg>
+
+                <div class="logo-img">
+                  <h2>500+</h2>
+                  <p>Total Review</p>
+                  <img src="./images/logo-yulduz.svg" alt=""> -->
+                </div>
+
+
+              </div>
+              
+        </div>
+        </div>
+      </section>
+
+      <section class="inter">
+        <div class="container">
+          <div class="inter_box">
+            <h1>Trending Courses</h1>
+            <div class="inter_box-1">
+              <p>All</p>
+              <p>Business</p>
+              <p>Art & Design</p>
+              <p>Development</p>
+              <p>Marketing</p>
+            </div>
+
+            <div class="inter_cards">
+
+              <div class="inter_card-1">
+                <img src="./images/inter-bg.svg" alt="">
+                <button>UI/UX Design</button>
+                <p>Interpersonal skills - work better with others!</p>
+                <h4>Tanah Air Team</h4>
+                <span><img src="./images/inter-yulduz.svg" alt=""> (2078)</span>
+                <h3>$640 <span>$384</span></h3>
+              </div>
+
+              <div class="inter_card-1">
+                <img src="./images/inter-bg.svg" alt="">
+                <button>Web Developer</button>
+                <p>How to become an Expert Web Developer</p>
+                <h4>Tanah Air Team</h4>
+                <span><img src="./images/inter-yulduz.svg" alt=""> (2078)</span>
+                <h3>$640 <span>$384</span></h3>
+              </div>
+
+              <div class="inter_card-1">
+                <img src="./images/inter-bg.svg" alt="">
+                <button>UX Research</button>
+                <p>User Experience Design Essentials</p>
+                <h4>Tanah Air Team</h4>
+                <span><img src="./images/inter-yulduz.svg" alt=""> (2078)</span>
+                <h3>$640 <span>$326</span></h3>
+              </div>
+              
+              <div class="inter_card-1">
+                <img src="./images/inter-bg.svg" alt="">
+                <button>3D Design</button>
+                <p>Creating 3D Modelling in 
+                  Blender </p>
+                <h4>Tanah Air Team</h4>
+                <span><img src="./images/inter-yulduz.svg" alt=""> (2078)</span>
+                <h3>$640 <span>$710</span></h3>
+              </div>
+
+            </div>
+
+            <div class="inter_cards">
+
+              <div class="inter_card-1">
+                <img src="./images/inter-bg.svg" alt="">
+                <button>Public Speaking</button>
+                <p>Interpersonal skills - work better with others!</p>
+                <h4>Tanah Air Team</h4>
+                <span><img src="./images/inter-yulduz.svg" alt=""> (2078)</span>
+                <h3>$640 <span>$384</span></h3>
+              </div>
+
+              <div class="inter_card-1">
+                <img src="./images/inter-bg.svg" alt="">
+                <button>UI/UX Design</button>
+                <p>How to become an Expert Web Developer</p>
+                <h4>Tanah Air Team</h4>
+                <span><img src="./images/inter-yulduz.svg" alt=""> (2078)</span>
+                <h3>$640 <span>$758</span></h3>
+              </div>
+
+              <div class="inter_card-1">
+                <img src="./images/inter-bg.svg" alt="">
+                <button>3D Design</button>
+                <p>Creating 3D Modelling in Blender </p>
+                <h4>Tanah Air Team</h4>
+                <span><img src="./images/inter-yulduz.svg" alt=""> (2078)</span>
+                <h3>$640 <span>$973</span></h3>
+              </div>
+              
+              <div class="inter_card-1">
+                <img src="./images/inter-bg.svg" alt="">
+                <button>UI/UX Design</button>
+                <p>Interpersonal skills - work better with others! </p>
+                <h4>Tanah Air Team</h4>
+                <span><img src="./images/inter-yulduz.svg" alt=""> (2078)</span>
+                <h3>$640 <span>$273</span></h3>
+              </div>
+
+            </div>
+
+            <button>More Courses</button>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap">
+        <div class="container">
+          <div class="wrap_box">
+            <h1>Top Categories</h1>
+
+           <div class="wrap_box-content">
+
+            <div class="wrap_box-cards">
+
+              <div class="wrap_box-1">
+                <img src="./images/warp-1.svg" alt="">
+                <p>Art & Design</p>
+              </div>
+
+              <div class="wrap_box-1">
+                <img src="./images/warp-1.svg" alt="">
+                <p>Business</p>
+              </div>
+
+              <div class="wrap_box-1">
+                <img src="./images/warp-1.svg" alt="">
+                <p>Copy Writting</p>
+              </div>
+
+              <div class="wrap_box-1">
+                <img src="./images/warp-1.svg" alt="">
+                <p>Marketing</p>
+              </div>
+
+
+            </div>
+            
+            <div class="wrap_box-cards">
+
+              <div class="wrap_box-1">
+                <img src="./images/warp-1.svg" alt="">
+                <p>Programming</p>
+              </div>
+
+              <div class="wrap_box-1">
+                <img src="./images/warp-1.svg" alt="">
+                <p>Photography</p>
+              </div>
+
+              <div class="wrap_box-1">
+                <img src="./images/warp-1.svg" alt="">
+                <p>Videography</p>
+              </div>
+
+              <div class="wrap_box-1">
+                <img src="./images/warp-1.svg" alt="">
+                <p>Personal Development</p>
+              </div>
+
+
+            </div>
+
+           </div>
+
+           <div class="wrap_box-play">
+
+                <div class="wrap_box-play-1">
+                  <img src="./images/video_library.svg" alt="">
+                  <p>10.000+</p>
+                  <h3>Courses</h3>
+                </div>
+    
+                <div class="wrap_box-play-1">
+                  <img src="./images/wrap-1-2.svg" alt="">
+                  <p>50.000+</p>
+                  <h3>Active Students</h3>
+                </div>
+    
+                <div class="wrap_box-play-1">
+                  <img src="./images/wrap-1-3.svg " alt="">
+                  <p>1000+</p>
+                  <h3>Active Mentor</h3>
+                </div>
+    
+                <div class="wrap_box-play-1">
+                  <img src="./images/flag.svg" alt="">
+                  <p>180</p>
+                  <h3>Countries</h3>
+                </div>
+ 
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero_box">
+
+            <div class="hero-1">
+              <img src="./images/hero-bg.svg" alt="">
+            </div>
+
+            <div class="hero-2">
+              <h1>Become an Mentor</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.</p>
+           
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.</p>
+            <button>Start Teaching</button>
+          </div>
+          </div>
+
+        </div>
+      </section> 
+      
+      
+      <section class="car">
+        <div class="container">
+          <div class="car_box">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="./images/logo-11.svg" alt="">
+               <div class="item-1"> <p>After studying here I gained new knowledge and insights. The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!</p>
+                <h3>KecekArif</h3>
+                <h4>Yang punya Surabaya nanti kapan - kapan tapi</h4></div>
+              </div>
+
+              <div class="item">
+                <img src="./images/play-1.svg" alt="">
+                <div class="item-1">
+                  <p>After studying here I gained new knowledge and insights. The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!</p>
+                <h3>KecekArif</h3>
+                <h4>Yang punya Surabaya nanti kapan - kapan tapi</h4>
+                </div>
+              </div>
+            </div>
+
+             
+            
+          <!-- </div>
+            <div class="car-1">
+              <img src="./images/play-1.svg" alt="">
+            </div>
+
+            <div class="car-2">
+              <p>After studying here I gained new knowledge and insights. The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!</p>
+              <h3>KecekArif</h3>
+              <h4>Yang punya Surabaya nanti kapan - kapan tapi</h4>
+            </div> -->
+
+          </div>
+        </div>
+      </section>
+
+      <section class="home">
+        <div class="container">
+          <div class="home_box">
+            <h1>Trusted by Company</h1>
+            <div class="home_1">
+              <img src="./images/home-2.svg" alt="">
+              <img src="./images/home-1.svg" alt="">
+              <img src="./images/Dummy Logo/02.svg" alt="">
+              <img src="./images/home-3.svg" alt="">
+              <img src="./images/home-2.svg" alt="">
+              <img src="./images/home-3.svg" alt="">
+              <img src="./images/home-4.svg" alt="">
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="door">
+        <div class="container">
+          <div class="door_box">
+             <h1>The Latest Blog</h1>
+
+              <div class="door-cards">
+
+                <div class="door-1">
+                    <img src="./images/home-1-1.svg" alt="">
+                    <span>3, Mei 2021 <span>3 min read</span></span>
+                    <h2>10 graphic design trends to get you inspired in 2021</h2>
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</p>
+                    <h3>Read More</h3>
+                </div>
+
+                <div class="door-1">
+                    <img src="./images/home-1-1.svg" alt="">
+                    <span>3, Mei 2021 <span>3 min read</span></span>
+                    <h2>Right Triangle Trigonometry Explained</h2>
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</p>
+                    <h3>Read More</h3>
+                </div>
+                
+                <div class="door-1">
+                    <img src="./images/home-1-1.svg" alt="">
+                    <span>3, Mei 2021 <span>3 min read</span></span>
+                    <h2>2 Reasons Why You’re Confusing Chemistry </h2>
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</p>
+                    <h3>Read More</h3>
+                </div>
+
+              </div>
+           </div>
+
+        </div>
+      </section>
+
+
+      
+    </main>
+
+
+    <footer>
+      <section class="foot-top">
+        <div class="container">
+          <div class="foot-top-box">
+            <div class="footer-1">
+              <img src="./images/footer-1.svg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus. </p>
+            </div>
+
+            <div class="footer-2">
+              <h2>About</h2>
+              <p>About Us</p>
+              <a href="./pages/courses.html">Courses</a>
+              <p>Monter</p>
+              <p>Contact Us</p>
+            </div>
+
+            <div class="footer-3">
+              <h2>Sapport</h2>
+              <p>Creers</p>
+              <p>Help & Support</p>
+              <a href="./pages/blog.html">Blog</a>
+            </div>
+
+            <div class="footer-4">
+              <h2>Company</h2>
+              <p>Privacy Policy</p>
+              <p>Terms of Service</p>
+              <p>Code of Conduct</p>
+            </div>
+
+          </div>
+          <div class="foot-bot">
+            <div class="foot-bot-1">
+              <p>Privacy Policy <span>Terms and Condition</span></p>
+            </div>
+            <div class="foot-bot-1">
+              <p>@2020 TanahAir Studio. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+
+
+    <script src="./js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      let modeBtn = document.getElementById("light-dark");
+
+modeBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+});
+    </script>
+  </body>
+</html>

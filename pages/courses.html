@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education | Courses</title>
+    <link rel="stylesheet" href="../scss/style.css" />
+  </head>
+  <body class="courses-page">
+    <!-- <h1 class="text-5xl text-center">Courses page</h1> -->
+
+    <header>
+      <div class="container">
+        <nav class="nav">
+            <a href="./index.html" class="logo">
+              <img src="../images/logo.svg" alt="Logo" />
+            </a>
+          
+            <label>
+              <input type="text" placeholder="Search bar" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.707 20.293L18.025 16.611C19.258 15.071 20 13.122 20 11C20 6.038 15.962 2 11 2C6.038 2 2 6.038 2 11C2 15.962 6.038 20 11 20C13.122 20 15.071 19.258 16.611 18.025L20.293 21.707L21.707 20.293ZM4 11C4 7.14 7.14 4 11 4C14.86 4 18 7.14 18 11C18 14.86 14.86 18 11 18C7.14 18 4 14.86 4 11Z" fill="#CCCCCC"/>
+              </svg>
+            </label>
+            
+            <div class="head-link">
+              <a href="./details.html">Details</a>
+              <a href="../index.html">Courses</a>
+              <a href="./blog.html">Blog</a>
+              <a href="./account.html">Account</a>
+              <button class="btn-1">Login</button>
+
+              <!-- dark//////////////////////// -->
+
+              <button id="light-dark" class="btn-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                   viewBox="0 0 24 24">
+                   <path d="M12 11.807A9.002 9.002 0 0 1 
+                       10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 
+                       10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 
+                       9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z">
+                   </path>
+                 </svg>
+             </button>
+
+             <!-- HAMBURGER -->
+              <div class="nav-items" id="navbar-responsive">
+
+                <a href="./details.html">Details</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./account.html">Account</a>
+                <a href="../index.html">Home</a>
+              </div>
+                  <button class="menu-btn" id="menu-btn">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                   </button>
+              <!-- <nav>
+                <div class="nav-items" id="navbar-responsive">
+                </div>
+                    <button class="menu-btn" id="menu-btn">
+                          <span class="line"></span>
+                          <span class="line"></span>
+                          <span class="line"></span>
+                     </button>
+                </nav> -->
+            </div>
+          
+
+          
+        </nav>
+      </div>
+    </header>
+
+      <main>
+        <section class="wer">
+          <div class="container">
+            <div class="wer_box">
+              <h1>How to become an Expert Web Developer</h1>
+              <div class="wer-1">
+                <img src="../images/Rating-yulduz-5ta.svg" alt="">
+                <p>4,7/5 <span>(1023 Reviews)</span> <span>20327 Student</span></p>
+              </div>
+              <div class="wer-2">
+                <img src="../images/wer-2.svg" alt="">
+                <p>Pak Arif Satria Kecek ulalala</p>
+              </div>
+              <div class="wer-btn">
+                <button class="wer-btn-1">Add To Wishlist +</button>
+                <button class="wer-btn-2">Share 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 6C17.4477 6 17 5.55228 17 5C17 4.44772 17.4477 4 18 4C18.5523 4 19 4.44772 19 5C19 5.55228 18.5523 6 18 6ZM6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13ZM18 20.02C17.4477 20.02 17 19.5723 17 19.02C17 18.4677 17.4477 18.02 18 18.02C18.5523 18.02 19 18.4677 19 19.02C19 19.5723 18.5523 20.02 18 20.02Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.35C15.11 18.56 15.08 18.78 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08ZM18 4C18.55 4 19 4.45 19 5C19 5.55 18.55 6 18 6C17.45 6 17 5.55 17 5C17 4.45 17.45 4 18 4ZM6 13C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11C6.55 11 7 11.45 7 12C7 12.55 6.55 13 6 13ZM18 20.02C17.45 20.02 17 19.57 17 19.02C17 18.47 17.45 18.02 18 18.02C18.55 18.02 19 18.47 19 19.02C19 19.57 18.55 20.02 18 20.02Z" fill="#F72585"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+      <footer>
+        <section class="foot-top">
+          <div class="container">
+            <div class="foot-top-box">
+              <div class="footer-1">
+                <img src="./images/footer-1.svg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus. </p>
+              </div>
+  
+              <div class="footer-2">
+                <h2>About</h2>
+                <p>About Us</p>
+                <a href="./pages/courses.html">Courses</a>
+                <p>Monter</p>
+                <p>Contact Us</p>
+              </div>
+  
+              <div class="footer-3">
+                <h2>Sapport</h2>
+                <p>Creers</p>
+                <p>Help & Support</p>
+                <a href="./pages/blog.html">Blog</a>
+              </div>
+  
+              <div class="footer-4">
+                <h2>Company</h2>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+                <p>Code of Conduct</p>
+              </div>
+  
+            </div>
+            <div class="foot-bot">
+              <div class="foot-bot-1">
+                <p>Privacy Policy <span>Terms and Condition</span></p>
+              </div>
+              <div class="foot-bot-1">
+                <p>@2020 TanahAir Studio. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+  
+  
+  
+      <script src="./js/main.js"></script>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          dots: false,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      </script>
+  
+      <script>
+        let modeBtn = document.getElementById("light-dark");
+  
+  modeBtn.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+  });
+      </script>
+
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
